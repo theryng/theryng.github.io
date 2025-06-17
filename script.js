@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             type: 'post',
             username: 'Fake Tagesschau',
-            avatar: '', // Pfad zu deinem Avatar-Bild
-            mediaSrc: 'media/post1.jpg',  // Pfad zu deinem Post-Bild
+            avatar: '', 
+            mediaSrc: 'media/post1.jpg',  
             caption: 'Das ist der erste Post, und zwar ein Bild.',
             likes: 125,
             comments: [
@@ -21,15 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         {
-            type: 'reel', // Hier ist es ein Reel
+            type: 'reel',
             username: 'Fake F1',
             avatar: 'media/avatar2.jpg',
-            mediaSrc: 'media/reel1.mp4', // Pfad zu deinem Reel-Video (MP4, WebM, etc.)
+            mediaSrc: 'media/reel1.mp4',
             caption: 'Das ist der zweite Post, und zwar ein Reel',
             likes: 345,
             comments: [
             ]
         }
+        //,
+        //{
+        //    type: 'reel', // 'reel' oder 'post'
+        //    username: 'Username',
+        //    avatar: 'media/avatar.jpg',
+        //    mediaSrc: 'media/media.mp4', // Pfad zu deinem Reel oder Post
+        //    caption: 'Caption Text',
+        //    likes: 345,
+        //    comments: [
+        //    ]
+        //}
+        //
+        
         // Füge hier weitere Post-Objekte hinzu!
     ];
 
@@ -74,14 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return postCard;
     }
 
-    // Schleife durch die Daten und füge Posts zum Feed hinzu
     feedData.forEach(post => {
         const postElement = createPostElement(post);
         feedContainer.appendChild(postElement);
     });
-
-    // Optional: Füge hier Dummy-Icons für die Aktionen hinzu
-    // Du musst diese Bilder (icon_heart.png, icon_comment.png, etc.) selbst erstellen
-    // oder von einer Icon-Bibliothek herunterladen und in den 'media'-Ordner legen.
-    // Beispiel: Du kannst Font Awesome Icons verwenden und als PNG speichern oder direkt als SVG im HTML nutzen.
 });
