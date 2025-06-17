@@ -21,6 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         {
+            type: 'post',
+            username: 'Fake Tagesschau',
+            avatar: '', 
+            mediaSrc: 'media/post1.jpg',  
+            caption: 'Das ist der erste Post, und zwar ein Bild.',
+            likes: 125,
+            comments: [
+                { user: 'Lukas', text: 'Du kannst auch eigene Kommentare eingeben!' },
+                { user: 'Lukas', text: 'Du kannst auch eigene Kommentare eingeben!' }
+            ]
+        },
+        {
             type: 'reel',
             username: 'Fake F1',
             avatar: 'media/avatar2.jpg',
